@@ -16,7 +16,7 @@ const App = () => {
         // console.log(response.data);
       })
       .catch((error) => {
-        setEr("attempt Failed !!");
+        setEr("Attempt Failed !!");
       });
   }, []);
 
@@ -26,7 +26,11 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">Characters</h1>
+      <h1 className="Header">Star Wars Characters</h1>
+      {characters.map((character, index) => (
+        <Character key={index} character={character} />
+      ))}
+      <h1 style={{ color: "red" }}>{er}</h1>
     </div>
   );
 };
