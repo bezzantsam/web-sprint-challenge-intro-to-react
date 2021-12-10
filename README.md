@@ -61,16 +61,16 @@ Your finished project must include all of the following requirements:
 
 After finishing your required elements, you can push your work further. These goals may or may not be things you have learned in this module but they build on the material you just studied. Time allowing, stretch your limits and see if you can deliver on any the following optional goals:
 
-- [ ] Make the Character component more complex and break it into several subcomponents.
+- [x ] Make the Character component more complex and break it into several subcomponents.
 - [ ] Use the endpoint `[GET] https://swapi.dev/api/films` (mocked in msw) to obtain movie information to render with the characters.
-- [ ] Create a helper function in separate module to remove unneeded information from the API data, before putting it in state.
-- [ ] Create transitions or animations with styled-components.
+- [ x] Create a helper function in separate module to remove unneeded information from the API data, before putting it in state.
+- [ x] Create transitions or animations with styled-components.
 - [ ] Use Promise.all to resolve an array of promises.
 
 ## Submission format
 
-- [ ] Submit via Codegrade by committing and pushing any new changes to the main branch.
-- [ ] Check Codegrade for automated feedback.
+- [x ] Submit via Codegrade by committing and pushing any new changes to the main branch.
+- [ x] Check Codegrade for automated feedback.
 - [ ] Check Codegrade in the days following the Sprint Challenge for reviewer feedback.
 - [ ] Any changes pushed after the deadline will not receive any feedback.
 
@@ -79,6 +79,17 @@ After finishing your required elements, you can push your work further. These go
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Put your answers underneath the questions:
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
+
+React primarily solves the problem of scalability. It would be impossibly labor intensive to scale Facebook to 3 billion people if developers had to constantly do DOM surgery in the inefficient old way. Writing HTML with Javascript that allows the UI to "react" to interaction is pretty brilliant. A library with all this functionality under the hood is well worth the stress of learning it. One thing I have learned from my research off the top of my head is the developers wanting to have everything relative to a functional component in one file as opposed to everything separate. For someone who struggles with distraction and attention deficit this is great as I have much less potential to go on tangents as I switch folders.
+
 1. Describe component state.
+
+State is easily described as data. To me it is much more semantic. If someone was to ask what is the state of my kitchen? I would think dirty or clean, empty or full? These quantifiable states that programmatically can be stored, referenced and and updated make for much more interactive features. It is a variable object that allows us to manage changing data.
+
 1. Describe props.
+
+Props is a standard place holder for properties. In React components can pass information though props. It is a way to encapsulate data and keep it safe from mutation while keeping components small enough that bugs aren't a potential nightmare thats unmanageable. It is a way of writing clean, reusable code.
+
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+React keeps functions pure so they are reusable and side effects are things that affect something outside the functions scope. A good example of that is data returning from an API or a user changing an input. The useEffect hook is what allows us to sync effects in functional components without them being classes. This allows the UI to be customized with effects that either require cleanup or do not.
