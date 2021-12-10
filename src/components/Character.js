@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-// import Details from "./Details";
+import Details from "./Details";
 
 const Container = styled.div`
   background-color: rgb(0, 0, 0, 0.5);
@@ -14,6 +14,7 @@ const Container = styled.div`
   padding: 16, 0, 12, 0;
   display: flex;
   justify-content: space-evenly;
+  background-repeat: repeat-x;
 `;
 
 const Div = styled.div`
